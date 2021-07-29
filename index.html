@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookListApp</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  
+  <h1 class="jumbotron text-center">Book List App</h1>
+  <p class="text-center text-underline">Add and store your favourite books name in a list. All the books will be stored in your local storage.</p>
+
+  <!-- Form to display and add books -->
+
+  <form  class="container" onsubmit="updateUI(event)">
+    <label for="book-name" class="form-label">Book Name</label>
+    <input id="book-name" type="text" class="form-control" ><br>
+    <label for="book-author" class="form-label">Book Author</label>
+    <input id="book-author" type="text" class="form-control"><br>
+    <label for="book-isbn" class="form-label">Book ISBN</label>
+    <input id="book-isbn" type="text" class="form-control"><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <div class="container mt-5">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Book Author</th>
+          <th>Book ISBN</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="books">
+
+      </tbody>
+    </table>
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
